@@ -5,8 +5,10 @@ import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
 import { auth } from "../firebase";
+import { useRouter } from "next/navigation";
 
 export default function SignupPage() {
+    const router = useRouter();
 
   const [name, setName] = useState("");
 
@@ -30,6 +32,7 @@ export default function SignupPage() {
       console.log(userCredential);
 
       alert("Signup Successful 😈🔥");
+      router.push("/login");
 
     } catch (error: any) {
 
