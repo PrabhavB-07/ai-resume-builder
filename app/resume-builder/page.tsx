@@ -170,7 +170,7 @@ const analyzeResume = async () => {
 
     setResumeAnalysis(data.result);
 
-    console.log("Resume Analyzed 😈🔥");
+    console.log("Resume Analyzed ");
 
   } catch (error) {
 
@@ -182,7 +182,7 @@ const handleSaveResume = async () => {
 
   try {
 
-    console.log("SAVE BUTTON CLICKED 😈🔥");
+    console.log("SAVE BUTTON CLICKED ");
 
     const user = auth.currentUser;
 
@@ -209,13 +209,13 @@ const handleSaveResume = async () => {
       }
     );
 
-    alert("Resume Saved Successfully 😈🔥");
+    alert("Resume Saved Successfully ");
 
   } catch (error) {
 
     console.log(error);
 
-    alert("Failed To Save Resume 😭");
+    alert("Failed To Save Resume ");
   }
 };
     const router = useRouter();
@@ -262,7 +262,7 @@ useEffect(() => {
       setPortfolio(data.portfolio || "");
       setSummary(data.summary || "");
 
-      console.log("Resume Loaded 😈🔥");
+      console.log("Resume Loaded ");
     }
   };
 
@@ -1822,7 +1822,7 @@ const [certifications, setCertifications] = useState("");
 
     <h2 className="text-2xl font-bold mb-4">
 
-      AI Resume Analysis 😈🔥
+      AI Resume Analysis 
 
     </h2>
 

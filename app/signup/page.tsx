@@ -20,7 +20,7 @@ export default function SignupPage() {
 
     try {
 
-      console.log("Signup button clicked 😈🔥");
+      console.log("Signup button clicked ");
 
       const userCredential =
         await createUserWithEmailAndPassword(
@@ -31,7 +31,7 @@ export default function SignupPage() {
 
       console.log(userCredential);
 
-      alert("Signup Successful 😈🔥");
+      alert("Signup Successful ");
       router.push("/login");
 
     } catch (error: any) {

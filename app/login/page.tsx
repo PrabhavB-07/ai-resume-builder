@@ -26,7 +26,7 @@ export default function LoginPage() {
         password
       );
 
-      alert("Login Successful 😈🔥");
+      alert("Login Successful ");
 
       router.push("/resume-builder");
 
