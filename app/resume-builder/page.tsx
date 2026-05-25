@@ -1271,7 +1271,7 @@ const [certifications, setCertifications] = useState("");
   const updateEdu = (index: number, field: keyof EduItem, val: string) => {
     const updated = [...educationList];
     updated[index][field] = val;
-    doc.text ? null : null; // Safe trigger
+    
     setEducationList(updated);
   };
 
